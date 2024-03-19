@@ -36,8 +36,5 @@ io.on("connection", (socket) => {
     io.to(to).emit("peer:nego:final", { from: socket.id, ans });
   });
 
-  socket.on("disconnect" , ()=>{
-     console.log(Object.keys(socket.rooms));
-    
-  })
+  
 });
